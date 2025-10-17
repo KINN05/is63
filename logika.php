@@ -14,14 +14,6 @@
     # OPERATOR PERBANDINGAN (== != > < >= <=)
     # OPERATOR LOGIKA ( AND OR) (&& ||)
 
-    // $username = "admin";
-    // $password = "admin123";
-
-    // if($username == "admin" && $password == "admin123"){
-    //     echo "LOGIN BERHASIL";
-    // }else{
-    //     echo "LOGIN GAGAL";
-    // }
 
     $username = "admin";
     $password = "123456";
@@ -36,23 +28,20 @@
         echo "Login Gagal";
     }
 
+    // $nama = "Budi";
+    // $nilai = 20;
 
-    // $nama = "kinn";
-    // $nilai = 80;
-
-    // if($nilai >= 60){
+    // if($nilai >= 70){
     //     echo "Selamat $nama, Kamu Lulus";
     // }elseif($nilai >= 40){
-    //     echo "Hai $nama, Kamu Harus Ikut Remedial";
-    // }elseif($nilai >= 20){
-    //     echo "Hai $nama, Kamu Harus Mengulang Tahun Depan";
+    //     echo "Hai, $nama. Kamu harus ikut remedial";
+    // }elseif($nilai >= 10){
+    //     echo "Maaf $nama, kamu Tidak Lulus";
     // }else{
-    //     echo "Hai $nama, Kamu Tidak Lulus";
+    //     echo "Hati-hati $nama, Kamu Akan di DO jika tidak memperbaiki nilai di MK lainnya";
     // }
 
 
-    
-    // $nilai = 40;
 
     // if($nilai > 50){
     //     echo "Kamu Lulus";
@@ -66,6 +55,22 @@
     //     }
     // }
 
+    echo "<hr>";
+    ##### SWITCH #######
+    $hari = 10;
+    switch($hari){
+        case 1:
+            echo "Hari Minggu";
+            break;
+        
+        case 2:
+            echo "Hari Senin";
+            break;
+        
+        default:
+            echo "Tidak Ada Hari";
+            break;
+    }
     ?>
 </body>
 </html>
