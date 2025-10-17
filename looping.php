@@ -24,16 +24,18 @@ do{
     $awal2++;
 }while($awal2 <= 10);
 
-// echo "<hr>";
-// ### FOREACH ###
-// $warna = array("Merah", "Kuning", "Hijau", "Biru", "Ungu");
-// foreach($warna as $w){
-//     echo "Warna $w <br>";
-// }
+echo "<hr>";
+### FOREACH ###
+$warna = array("Merah", "Kuning", "Hijau", "Biru", "Ungu");
+foreach($warna as $w){
+    echo "Warna $w <br>";
+}
 
-// echo "<hr>";
-// $angka = array(10, 20, 30, 40, 50);
-// foreach($angka as $a){
-//     echo "Angka $a <br>";
-// }
+echo "<hr>";
+$is63 = array("Rifqi", "Kinn", "Budi", "Siti", "Ana");
+foreach($is63 as $a){
+    echo "$a <br>";
+}
+
+
 ?>
