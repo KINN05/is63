@@ -22,9 +22,16 @@
             $bulan = array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
             foreach($bulan as $b){
                 echo "<option>$b</option>";
-                
             }
         ?>
+        </select>
+        <!-- <select>
+            <?php
+                $bulan  = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+                foreach($bulan as $list){
+                    echo "<option>$list</option>";
+                }
+            ?>
         </select>
 
         Tahun:
