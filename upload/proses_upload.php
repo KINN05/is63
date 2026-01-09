@@ -28,5 +28,6 @@ move_uploaded_file(from: $tmp_foto,to: "foto/$nama_foto")
 ?>
 
 <hr>
-<img src="foto" alt="">
+<img src="foto/<?=$nama_foto?>" alt="">
+<hr>
 <a href="index.php">kembali</a>
