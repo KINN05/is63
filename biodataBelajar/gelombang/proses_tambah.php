@@ -4,14 +4,14 @@ include("../koneksi.php");
 
 #2. Mengambil Value dari Form Tambah
 $nm_gel = $_POST["nm_gel"];
-$tgl_awal = $_POST["tgl_awal"];
-$tgl_akhir = $_POST["tgl_akhir"];
+$tgl_mulai = $_POST["tgl_mulai"];
+$tgl_berakhir = $_POST["tgl_berakhir"];
 
 
 
 #3. Query Insert (proses tambah data)
-$query .= "INSERT INTO gelombang (nama_gelombang,tgl_awal,tgl_akhir)
-    VALUE ('$nm_gel','$tgl_awal','$tgl_akhir')";
+$query .= "INSERT INTO gelombang (nama_gelombang,tgl_mulai,tgl_berakhir)
+    VALUE ('$nm_gel','$tgl_mulai','$tgl_berakhir')";
 
 
 $tambah = mysqli_query($koneksi, $query);

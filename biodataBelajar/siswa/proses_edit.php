@@ -12,6 +12,7 @@ $alamat = $_POST["alamat"];
 $email = $_POST["email"];
 $jk = $_POST["jk"];
 $jur = $_POST["jur"];
+$gel = $_POST["gel"];
 $nama_foto = $_FILES['foto']['name'];
 $tmp_foto = $_FILES['foto']['tmp_name'];
 
@@ -28,7 +29,7 @@ if ($nama_foto != "") {
 
     #3. Query Insert (proses tambah data)
     $query = "UPDATE biodata SET nama='$nama', nisn='$nisn', tempat_lahir='$t_lahir', 
-    tgl_lahir='$tgl_lahir', alamat='$alamat', email='$email', jenis_kelamin='$jk',  jurusan='$jur', foto='$nama_foto' 
+    tgl_lahir='$tgl_lahir', alamat='$alamat', email='$email', jenis_kelamin='$jk',  jurusans_id='$jur', gelombangs_id='$gel', foto='$nama_foto' 
     WHERE id='$id'";
 
     #tambahkan foto
@@ -36,7 +37,7 @@ if ($nama_foto != "") {
 } else {
     #3. Query Insert (proses edit data)
     $query = "UPDATE biodata SET nama='$nama', nisn='$nisn', tempat_lahir='$t_lahir', 
-    tgl_lahir='$tgl_lahir', alamat='$alamat', email='$email', jenis_kelamin='$jk',  jurusan='$jur' 
+    tgl_lahir='$tgl_lahir', alamat='$alamat', email='$email', jenis_kelamin='$jk',  jurusans_id='$jur', gelombangs_id='$gel' 
     WHERE id='$id'";
 }
 

@@ -37,13 +37,13 @@ $data = mysqli_fetch_array($edit);
                                     <option <?php echo $data['nama_gelombang']=='Gelombang 2' ? 'selected' : '' ?> value="Gelombang 2">Gelombang 2</option>
                             </select>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Tanggal Awal</label>
-                                <input value="<?= $data['tgl_awal'] ?>" name="tgl_awal" type="date" class="form-control" id="exampleInputEmail1"
+                                <label for="exampleInputEmail1" class="form-label">Tanggal Mulai</label>
+                                <input value="<?= $data['tgl_mulai'] ?>" name="tgl_mulai" type="date" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Tanggal Akhir</label>
-                                <input value="<?= $data['tgl_akhir'] ?>" name="tgl_akhir" type="date" class="form-control" id="exampleInputEmail1"
+                                <label for="exampleInputEmail1" class="form-label">Tanggal Berakhir</label>
+                                <input value="<?= $data['tgl_berakhir'] ?>" name="tgl_berakhir" type="date" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>

@@ -71,9 +71,36 @@
                                 <label for="exampleInputEmail1" class="form-label">Jurusan</label>
                                 <select class="form-control" name="jur" id="">
                                     <option value="">-Pilih Jurusan-</option>
-                                    <option value="IPA">IPA</option>
-                                    <option value="IPS">IPS</option>
-                                    <option value="Bahasa">Bahasa</option>
+                                    <?php 
+                                        //kode untuk looping data jurusan
+                                        include_once('../koneksi.php');
+                                        $qry_jur = "SELECT * FROM jurusan";
+                                        $data_jur = mysqli_query($koneksi,$qry_jur);
+                                        foreach($data_jur as $item_jur){
+                                    ?>
+                                    <option value="<?=$item_jur['id']?>"><?=$item_jur['kode']?> - <?=$item_jur['nama_jurusan']?></option>
+                                    <?php
+                                        //penutup kode looping jurusan
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Gelombang</label>
+                                <select class="form-control" name="gel" id="">
+                                    <option value="">-Pilih Gelombang-</option>
+                                    <?php 
+                                        //kode untuk looping data gelombang
+                                        include_once('../koneksi.php');
+                                        $qry_gel = "SELECT * FROM gelombang";
+                                        $data_gel = mysqli_query($koneksi,$qry_gel);
+                                        foreach($data_gel as $item_gel){
+                                    ?>
+                                    <option value="<?=$item_gel['id']?>"><?=$item_gel['nama_gelombang']?> - <?=$item_gel['tgl_mulai']?> - <?=$item_gel['tgl_berakhir']?></option>
+                                    <?php
+                                        //penutup kode looping gelombang
+                                        }
+                                    ?>
                                 </select>
                             </div>
                             <div class="mb-3">

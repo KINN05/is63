@@ -32,8 +32,8 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Nama Gelombang</th>
-                                    <th scope="col">Tanggal Awal</th>
-                                    <th scope="col">Tanggal Akhir</th>
+                                    <th scope="col">Tanggal Mulai</th>
+                                    <th scope="col">Tanggal Berakhir</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -56,8 +56,8 @@
                                     ?>
                                         <th scope="row"><?= $nomor++ ?></th>
                                         <td><?= $data['nama_gelombang'] ?></td>
-                                        <td><?= $data['tgl_awal'] ?></td>
-                                        <td><?= $data['tgl_akhir'] ?></td>
+                                        <td><?= $data['tgl_mulai'] ?></td>
+                                        <td><?= $data['tgl_berakhir'] ?></td>
                                         <td>
                                             <a href="formedit.php?id=<?= $data['id'] ?>" class="btn btn-info btn-sm">
                                                 <i class="fa-solid fa-pen-to-square"></i>

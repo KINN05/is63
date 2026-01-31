@@ -32,13 +32,13 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Tanggal Awal</label>
-                                <input name="tgl_awal" type="date" class="form-control" id="exampleInputEmail1"
+                                <label for="exampleInputEmail1" class="form-label">Tanggal Mulai</label>
+                                <input name="tgl_mulai" type="date" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Tanggal Akhir</label>
-                                <input name="tgl_akhir" type="date" class="form-control" id="exampleInputEmail1"
+                                <label for="exampleInputEmail1" class="form-label">Tanggal Berakhir</label>
+                                <input name="tgl_berakhir" type="date" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                             </div>
                             
