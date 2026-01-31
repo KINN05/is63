@@ -17,6 +17,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="http://localhost/IS63/biodataBelajar/dosen/">Dosen</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://localhost/IS63/biodataBelajar/gelombang/">Gelombang</a>
+                </li>
 
             </ul>
             <form class="d-flex" role="search">
